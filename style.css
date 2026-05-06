@@ -1,0 +1,50 @@
+:root {
+    --bg: #f8f4ee;
+    --primary: #8b5e3c;
+    --secondary: #c8a27a;
+    --text: #3e2c23;
+    --accent: #a67c52;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.nav-link:hover {
+    color: var(--accent);
+}
+
+.hero-section {
+    background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp4160995.jpg&f=1&nofb=1&ipt=c7ea48dffce843708cb366fbd2f2839a69706a2189122ae13e346c6572372cc8') center/cover no-repeat;
+
+    /* Fade hacia abajo (transparente) */
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+.hero-section h1 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.section-header h2 {
+    font-weight: 600;
+    color: var(--text);
+    font-size: 1.4rem;
+}
+
+.section-header::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--accent);
+    border-radius: 2px;
+    margin: 8px auto 0;
+}
+
+.carousel {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
