@@ -1,0 +1,48 @@
+:root {
+    --bg: #f8f4ee;
+    --primary: #8b5e3c;
+    --secondary: #c8a27a;
+    --text: #3e2c23;
+    --accent: #a67c52;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.navbar,
+footer {
+    background-color: var(--secondary);
+}
+
+.nav-link:hover {
+    color: var(--accent);
+}
+
+.contact-card {
+    background-color: white;
+    border: 1px solid var(--secondary);
+    border-radius: 10px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-control:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 0.2rem rgba(166, 124, 82, 0.25);
+}
+
+.btn-custom {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: var(--accent);
+}
+
+footer span {
+    color: var(--text);
+}

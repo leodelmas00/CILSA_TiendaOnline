@@ -1,5 +1,18 @@
 /* Estilos personalizados para la tienda online */
-
+:root {
+    --bg: #f8f4ee;
+    --primary: #8b5e3c;
+    --secondary: #c8a27a;
+    --text: #3e2c23;
+    --accent: #a67c52;
+}
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+.nav-link:hover {
+    color: var(--accent);
+}
 
 |* Estilos personalizados para la barra de filtros */
 .filter-tab {
@@ -7,14 +20,26 @@
     flex-direction: column;
     gap: 10px;
     padding: 20px;
-    border-right: 2px solid black;   
     border-radius: 5px;
 }
 
 .filter-title{
-    font-weight: bold;
     font-size: 1.2rem;
     margin-bottom: 10px;
+}
+
+.filter-tab .nav-link {
+    color: var(--text);
+    font-weight: 500;
+}
+
+.filter-tab .nav-link:hover {
+    color: var(--accent);
+}
+
+.filter-tab .nav-link.active {
+    background-color: var(--primary);
+    color: white;
 }
 
 /* Estilos personalizados de las Card de Productos */
@@ -33,6 +58,30 @@
 .card {
     margin-bottom: 20px;
     width: 18rem;
+    background-color: var(--secondary);
+}
+
+.btn {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.btn:hover {
+    background-color: var(--accent);
+    color: white;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--accent);
+}
+
+.btn:active {
+    background-color: var(--accent);
+    color: white;
 }
 
 .card-img {
