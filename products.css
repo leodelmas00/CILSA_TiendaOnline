@@ -93,6 +93,22 @@ body {
 .card-text {
     font-size: .8rem;
 }
+.btn-ampliar{
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-ampliar:hover{
+    background-color: var(--accent);
+    color: white;
+}
+
+.envio-texto{
+    color: var(--primary);
+    font-weight: 600;
+}
 
 
 /* Estilos personalizados para el @media */
