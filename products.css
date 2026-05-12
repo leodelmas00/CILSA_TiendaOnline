@@ -1,20 +1,6 @@
 /* Estilos personalizados para la tienda online */
-:root {
-    --bg: #f8f4ee;
-    --primary: #8b5e3c;
-    --secondary: #c8a27a;
-    --text: #3e2c23;
-    --accent: #a67c52;
-}
-body {
-    background-color: var(--bg);
-    color: var(--text);
-}
-.nav-link:hover {
-    color: var(--accent);
-}
 
-|* Estilos personalizados para la barra de filtros */
+/* Estilos personalizados para la barra de filtros */
 .filter-tab {
     display: flex;
     flex-direction: column;

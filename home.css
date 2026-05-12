@@ -8,6 +8,7 @@
 
 body {
     background-color: var(--bg);
+    min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
 }
 
 .nav-link:hover {
@@ -47,4 +48,11 @@ body {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+footer {
+    /*Footer no sube cuando hay menos contenido en la pagina*/
+
+    bottom: 0;
+    width: 100%;
 }

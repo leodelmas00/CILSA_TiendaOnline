@@ -15,6 +15,7 @@
   href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
   >
     <link rel="stylesheet" href="./products.css" />
+    <link rel="stylesheet" href="./home.css">
     <title>Productos</title>
   </head>
   <body>
@@ -22,7 +23,7 @@
 
     <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary px-5">
       <div class="container-fluid">
-        <a class="navbar-brand" href="home.html">TiendaBoots</a>
+        <a class="navbar-brand" href="index.html">TiendaBoots</a>
 
         <!-- Botón hamburguesa -->
         <button
@@ -51,33 +52,40 @@
     <!-- Seccion productos -->
 
     <div class="container-fluid my-2">
-      <div class="d-flex flex-row gy-4">
-        <div class="filter-tab">
-          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <p class="filter-title">Filtrar por:</p>
-
-            <button class="nav-link active text-start" id="v-pills-boots-tab" data-bs-toggle="pill" data-bs-target="#v-pills-boots" type="button" role="tab" aria-controls="v-pills-boots" aria-selected="true">
-              Todas las botas
-            </button>
-            <p class="filter-title">Color:</p>
-            <button class="nav-link text-start" id="v-pills-Marrón-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Marrón" type="button" role="tab" aria-controls="v-pills-Marrón" aria-selected="false">
-              Marrón
-            </button>
-            <button class="nav-link text-start" id="v-pills-Negro-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Negro" type="button" role="tab" aria-controls="v-pills-Negro" aria-selected="false">
-              Negro
-            </button>
-            <button class="nav-link text-start" id="v-pills-Bordo-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Bordo" type="button" role="tab" aria-controls="v-pills-Bordo" aria-selected="false">
-              Bordo
-            </button>
+      <div class="d-flex flex-column gy-4 align-items-center">
+        <div class="d-flex flex-row flex-md-row gap-4 align-items-center">
+        <!-- FILTROS -->
+          <div class="filter-tab">
+            <div class="dropdownnav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <p class="filter-title">Filtrar</p>
+              </button>
+              <ul class="dropdown-menu">
+                <li><button class="dropdown-item nav-link active text-start" id="v-pills-boots-tab" data-bs-toggle="pill" data-bs-target="#v-pills-boots" type="button" role="tab" aria-controls="v-pills-boots" aria-selected="true">
+                  Todas las botas
+                </button></li>
+                <li><button class="dropdown-item nav-link text-start" id="v-pills-Marrón-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Marrón" type="button" role="tab" aria-controls="v-pills-Marrón" aria-selected="false">
+                Marrón
+              </button></li>
+                <li><button class="dropdown-itemnav-link text-start" id="v-pills-Negro-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Negro" type="button" role="tab" aria-controls="v-pills-Negro" aria-selected="false">
+                Negro
+              </button></li>
+              <li><button class="dropdown-item nav-link text-start" id="v-pills-Bordo-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Bordo" type="button" role="tab" aria-controls="v-pills-Bordo" aria-selected="false">
+                Bordo
+              </button></li>
+              </ul>
+            </div>
+            <div >
+            </div>
           </div>
-        </div>
-
-        <div style="flex: 2; max-width: 85%;">
+          <div class="text-center">
+            <h1>PRODUCTOS</h1>
+          </div>
+      </div>
+      <!-- PRODUCTOS -->
+      <div style="flex: 2; max-width: 90%;">
           <div class="tab-content" id="v-pills-tabContent">
             <div class="tab-pane fade show active" id="v-pills-boots" role="tabpanel" aria-labelledby="v-pills-boots-tab">
-              <div class="text-center mb-4">
-                <h1>PRODUCTOS</h1>
-              </div>
               <div class="row">
                 <div class="col mb-4">
                   <div class="card h-100">
@@ -520,7 +528,7 @@
               </div>
               </div>
           
-        </div>
+      </div>
       </div>
     </div>
 
@@ -562,6 +570,7 @@
     
         </div>
       </div>
+    </div>
     </div>
     <!-- Seccion footer -->
 
