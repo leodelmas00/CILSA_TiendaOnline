@@ -78,6 +78,7 @@
               <div class="text-center mb-4">
                 <h1>PRODUCTOS</h1>
               </div>
+            
               <div class="row">
                 <div class="col mb-4">
                   <div class="card h-100">
@@ -93,6 +94,7 @@
                       </p>
                                            
                       <button 
+                      
                       class="btn btn-ampliar ver-producto"
                       data-nombre="Botas Timberland Earthkeepers para hombre"
                       data-precio="$389.999"
@@ -552,9 +554,11 @@
           <div id="modalStock" class="mb-3"></div>
           <!-- Envío -->
           <p id="modalEnvio" class="fw-semibold"></p>
+          <!-- ALERTA -->
+          <div id="alertaCarrito"></div>
           <!-- BOTONES -->
           <div class="d-flex gap-2 mt-4">
-            <button class="btn btn-success">
+            <button class="btn btn-success" id="btnCarrito">
             <i class="bi bi-cart-plus"></i>
                 Agregar al carrito
               </button>
@@ -658,6 +662,31 @@ document.getElementById('modalRating').innerHTML =
   document.activeElement.blur();
 
   });
+  const btnCarrito =
+  document.getElementById('btnCarrito');
+
+  btnCarrito.addEventListener('click', () => {
+
+  document.getElementById('alertaCarrito').innerHTML = `
+
+    <div class="alert alert-success alert-dismissible fade show mt-3">
+
+      <strong>
+        ¡Agregaste el producto al carrito!
+      </strong>
+
+      <button 
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert">
+      </button>
+
+    </div>
+
+  `;
+
+});
+  
     </script>
   </body>
 </html>
