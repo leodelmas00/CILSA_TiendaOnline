@@ -1,11 +1,16 @@
 # CILSA_TiendaOnline
 
 ## Estructura del Proyecto
+```
+Proyecto/
 │
 ├── index.html
-├── productos.html
+├── products.html
 │   └── modal
+│
 └── formulario.html
+```
+
 
 ## Proyecto
 Desarrollamos como proyecto una página web de una Tienda online que vende botas "TiendaBoots" con 3 secciones:
@@ -24,10 +29,12 @@ Desarrollamos como proyecto una página web de una Tienda online que vende botas
 ### Librerías y estructura
 - El proyecto se desarrolló con bootstrap incorporando inclusive iconos de bootstrap. También tiene en su estructura archivos .css y scripts .js incorporados en el cuerpo de los html.
 
+
 ## Git y control de versiones
 - Utilizamos Git y Github para el control de versiones del código del proyecto.
 - Implementamos ramas para trabajar en diferentes desarrollos de secciones  y correcciones de forma aislada.
 - Usamos commits descriptivos y mensajes claros para documentar los cambios.
+
 
 ## Responsiveness
 La web fue diseñada con un enfoque responsive, adaptándose correctamente a distintos dispositivos y tamaños de pantalla. Se trabajó sobre tres resoluciones principales:
