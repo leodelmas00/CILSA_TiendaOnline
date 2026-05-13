@@ -28,6 +28,10 @@
     color: white;
 }
 
+.filter-mobile {
+    display: none !important;
+}
+
 /* Estilos personalizados de las Card de Productos */
 .row {
     display: flex;
@@ -101,6 +105,7 @@
 @media (max-width: 768px) {
     .row {
         gap: 10px;
+        flex-direction: column;
     }
     .filter-tab {
         border-radius: 5px;
@@ -109,6 +114,15 @@
     }
     .filter-title{
         font-size: 1rem;
+    }
+    .filter-mobile {
+        display: flex !important;
+    }
+    .filtro-desk {
+        display: none;
+    }
+    .title-products{
+        display: none;
     }
     .card {
         width: 100%;

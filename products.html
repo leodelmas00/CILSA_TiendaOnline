@@ -52,445 +52,213 @@
     <!-- Seccion productos -->
 
     <div class="container-fluid my-2">
-      <div class="d-flex flex-column gy-4 align-items-center">
-        <div class="d-flex flex-row flex-md-row gap-4 align-items-center">
-        <!-- FILTROS -->
+      <div class="d-flex flex-column flex-md-row gy-4 align-items-center align-items-md-start">
+
+      <!-- FILTROS --> 
+      <!-- Filtro Desktop -->
+        <div class="filter-tab filtro-desk">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <p class="filter-title">Filtrar por:</p>
+
+            <button class="nav-link active text-start" id="v-pills-boots-tab" data-bs-toggle="pill" data-bs-target="#v-pills-boots" type="button" role="tab" aria-controls="v-pills-boots" aria-selected="true">
+              Todas las botas
+            </button>
+            <p class="filter-title">Color:</p>
+            <button class="nav-link text-start" id="v-pills-Marrón-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Marrón" type="button" role="tab" aria-controls="v-pills-Marrón" aria-selected="false">
+              Marrón
+            </button>
+            <button class="nav-link text-start" id="v-pills-Negro-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Negro" type="button" role="tab" aria-controls="v-pills-Negro" aria-selected="false">
+              Negro
+            </button>
+            <button class="nav-link text-start" id="v-pills-Bordo-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Bordo" type="button" role="tab" aria-controls="v-pills-Bordo" aria-selected="false">
+              Bordo
+            </button>
+          </div>
+        </div>
+
+        <!-- Filtro Mobile -->
+        <div class="d-flex flex-row flex-md-row gap-4 align-items-center filter-mobile">
+
           <div class="filter-tab">
-            <div class="dropdownnav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <p class="filter-title">Filtrar</p>
-              </button>
-              <ul class="dropdown-menu">
-                <li><button class="dropdown-item nav-link active text-start" id="v-pills-boots-tab" data-bs-toggle="pill" data-bs-target="#v-pills-boots" type="button" role="tab" aria-controls="v-pills-boots" aria-selected="true">
-                  Todas las botas
+              <div class="dropdownnav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <p class="filter-title">Filtrar</p>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item nav-link active text-start" id="v-pills-boots-tab" data-bs-toggle="pill" data-bs-target="#v-pills-boots" type="button" role="tab" aria-controls="v-pills-boots" aria-selected="true">
+                    Todas las botas
+                  </button></li>
+                  <li><button class="dropdown-item nav-link text-start" id="v-pills-Marrón-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Marrón" type="button" role="tab" aria-controls="v-pills-Marrón" aria-selected="false">
+                  Marrón
                 </button></li>
-                <li><button class="dropdown-item nav-link text-start" id="v-pills-Marrón-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Marrón" type="button" role="tab" aria-controls="v-pills-Marrón" aria-selected="false">
-                Marrón
-              </button></li>
-                <li><button class="dropdown-itemnav-link text-start" id="v-pills-Negro-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Negro" type="button" role="tab" aria-controls="v-pills-Negro" aria-selected="false">
-                Negro
-              </button></li>
-              <li><button class="dropdown-item nav-link text-start" id="v-pills-Bordo-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Bordo" type="button" role="tab" aria-controls="v-pills-Bordo" aria-selected="false">
-                Bordo
-              </button></li>
-              </ul>
-            </div>
-            <div >
-            </div>
+                  <li><button class="dropdown-item nav-link text-start" id="v-pills-Negro-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Negro" type="button" role="tab" aria-controls="v-pills-Negro" aria-selected="false">
+                  Negro
+                </button></li>
+                <li><button class="dropdown-item nav-link text-start" id="v-pills-Bordo-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Bordo" type="button" role="tab" aria-controls="v-pills-Bordo" aria-selected="false">
+                  Bordo
+                </button></li>
+                </ul>
+              </div>
+              <div >
+              </div>
           </div>
-          <div class="text-center">
-            <h1>PRODUCTOS</h1>
-          </div>
-      </div>
+
+          <h1 class="text-center">PRODUCTOS</h1>
+         
+        </div>
+
       <!-- PRODUCTOS -->
-      <div style="flex: 2; max-width: 90%;">
-          <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-boots" role="tabpanel" aria-labelledby="v-pills-boots-tab">
-              <div class="row">
-                <div class="col mb-4">
-                  <div class="card h-100">
-                    <img
-                      src="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      class="card-img-top img-fluid rounded card-img"
-                      alt="Botas Timberland Earthkeepers para hombre"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Botas Timberland Earthkeepers para hombre</h5>
-                      <p class="card-text">
-                        Un mix entre la durabilidad de Timberland y la conciencia sustentable.
-                      </p>
-                                           
-                      <button 
-                      class="btn btn-ampliar ver-producto"
-                      data-nombre="Botas Timberland Earthkeepers para hombre"
-                      data-precio="$389.999"
-                      data-descripcion="Un mix entre la durabilidad de Timberland y la conciencia sustentable."
-                      data-imagen="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      data-bs-toggle="modal"
-                      data-bs-target="#productoModal"
-                      data-stock="En stock"
-                      data-stockclass="success"
-                      data-stars="4.5"                    
-                      data-envio="Envíos sin cargo a todo el país"                    
-                      data-bs-toggle="modal"
-                      data-bs-target="#productoModal"
-                    >
-                      Ampliar
-                    </button>
-                    
-                      <p class="card-text">
-                        <small class="text-body-secondary">Editado hace 3 minutos</small>
-                      </p>
-        
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col mb-4">
-                  <div class="card h-100">
-                    <img
-                      src="media/bota3.webp"
-                      class="card-img-top img-fluid rounded card-img"
-                      alt="Borcegos estilo militar color negro"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Borcegos estilo militar color negro</h5>
-                      <p class="card-text">
-                        Uniendo resistencia y calidad, con un estilo clasicamente militar.
-                      </p>
-                      <button 
-                      class="btn btn-ampliar ver-producto"
-                      data-nombre="Borcegos estilo militar color negro"
-                      data-precio="$289.999"
-                      data-descripcion="Uniendo resistencia y calidad, con un estilo clasicamente militar."
-                      data-imagen="media/bota3.webp"
-                      data-bs-toggle="modal"
-                      data-bs-target="#productoModal"
-                      data-stock="En stock"
-                      data-stockclass="success"
-                      data-stars="4"    
-                      data-envio="Envíos sin cargo a todo el país"                    
-                      data-bs-toggle="modal"
-                      data-bs-target="#productoModal"
-                    >
-                      Ampliar
-                    </button>
-                     
-                      <p class="card-text">
-                        <small class="text-body-secondary">Editado hace 3 minutos</small>
-                      </p>
+        <div style="flex: 2; max-width: 90%;">
+          <h1 class="text-center title-products">PRODUCTOS</h1>
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-boots" role="tabpanel" aria-labelledby="v-pills-boots-tab">
+                <div class="row">
+                  <div class="col mb-4">
+                    <div class="card h-100">
+                      <img
+                        src="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top img-fluid rounded card-img"
+                        alt="Botas Timberland Earthkeepers para hombre"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Botas Timberland Earthkeepers para hombre</h5>
+                        <p class="card-text">
+                          Un mix entre la durabilidad de Timberland y la conciencia sustentable.
+                        </p>
+                                            
+                        <button 
+                        class="btn btn-ampliar ver-producto"
+                        data-nombre="Botas Timberland Earthkeepers para hombre"
+                        data-precio="$389.999"
+                        data-descripcion="Un mix entre la durabilidad de Timberland y la conciencia sustentable."
+                        data-imagen="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        data-bs-toggle="modal"
+                        data-bs-target="#productoModal"
+                        data-stock="En stock"
+                        data-stockclass="success"
+                        data-stars="4.5"                    
+                        data-envio="Envíos sin cargo a todo el país"                    
+                        data-bs-toggle="modal"
+                        data-bs-target="#productoModal"
+                      >
+                        Ampliar
+                      </button>
                       
-                    </div>
-                  
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card h-100">
-                    <img
-                      src="https://images.unsplash.com/photo-1542838776-096d877b5aa2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fEJvdGFzfGVufDB8fDB8fHww"
-                      class="card-img-top img-fluid rounded card-img"
-                      alt="Botas impermeables Timberland Premium"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Botas impermeables Timberland Premium</h5>
-                      <p class="card-text">
-                        Diseñadas hace 40 años se mantienen como un ícono global hoy en día.
-                      </p>
-                      <button 
-                      class="btn btn-ampliar ver-producto"
-                      data-nombre="Botas impermeables Timberland Premium"
-                      data-precio="$320.999"
-                      data-descripcion="Diseñadas hace 40 años se mantienen como un ícono global hoy en día."
-                      data-imagen="https://images.unsplash.com/photo-1542838776-096d877b5aa2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fEJvdGFzfGVufDB8fDB8fHww"
-                      data-bs-toggle="modal"
-                      data-bs-target="#productoModal"
-                      data-stock="En stock"
-                      data-stockclass="success"
-                      data-stars="4.5"                       
-                      data-envio="Envíos sin cargo a todo el país"                    
-                      data-bs-toggle="modal"
-                      data-bs-target="#productoModal"
-                    >
-                      Ampliar
-                    </button>
-                      <p class="card-text">
-                        <small class="text-body-secondary">Editado hace 3 minutos</small>
-                      </p>
+                        <p class="card-text">
+                          <small class="text-body-secondary">Editado hace 3 minutos</small>
+                        </p>
+          
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col mb-4">
-                  <div class="card h-100">
-                    <img
-                      src="https://images.unsplash.com/photo-1638609348722-aa2a3a67db26?q=80&w=1345&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      class="card-img-top img-fluid card-img rounded"
-                      alt="Botas brogue con puntera de Barker Calder"
-                    />
-                  <div class="card-body">
-                    <h5 class="card-title">Botas brogue con puntera de Barker Calder.</h5>
-                    <p class="card-text">Botas elegantes con un extra.</p>
-                    <button 
-                      class="btn btn-ampliar ver-producto"
-                      data-nombre="Botas brogue con puntera de Barker Calder"
-                      data-precio="$159.999"
-                      data-descripcion="Botas elegantes con un extra."
-                      data-imagen="https://images.unsplash.com/photo-1638609348722-aa2a3a67db26?q=80&w=1345&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      data-bs-toggle="modal"
-                      data-bs-target="#productoModal"
-                      data-stock="Sin stock"
-                      data-stockclass="danger"
-                      data-stars="4"                        
-                      data-envio="Envíos sin cargo a todo el país"                    
-                      data-bs-toggle="modal"
-                      data-bs-target="#productoModal"
-                    >
-                      Ampliar
-                    </button>
-                    <p class="card-text">
-                      <small class="text-body-secondary">Editado hace 3 minutos</small>
-                    </p>
-                  </div>
-                </div>
-                </div>
-                <div class="col mb-4">
-                <div class="card h-100">
-                  <img
-                    src="https://plus.unsplash.com/premium_photo-1728158949987-efc83ed54df4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    class="card-img-top img-fluid card-img"
-                    alt="Botas Martens Rojo Cereza Liso"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Botas Martens Rojo Cereza Liso</h5>
-                    <p class="card-text">
-                      Entrá en el modo rebelde y expresivo.
-                    </p>
-                    <button 
-                    class="btn btn-ampliar ver-producto"
-                    data-nombre="Botas Martens Rojo Cereza Liso"
-                    data-precio="$220.999"
-                    data-descripcion="Entrá en el modo rebelde y expresivo."
-                    data-imagen="https://plus.unsplash.com/premium_photo-1728158949987-efc83ed54df4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    data-bs-toggle="modal"
-                    data-bs-target="#productoModal"
-                    data-stock="En stock"
-                    data-stockclass="success"
-                    data-stars="4"                        
-                    data-envio="Envíos sin cargo a todo el país"                    
-                    data-bs-toggle="modal"
-                    data-bs-target="#productoModal"
-                  >
-                    Ampliar
-                  </button>
-                    <p class="card-text">
-                      <small class="text-body-secondary">Editado hace 3 minutos</small>
-                    </p>
-                  </div>
-                </div>
-                </div>
-                <div class="col mb-4">
-                <div class="card h-100">
-                  <img
-                    src="https://images.unsplash.com/photo-1613673720017-56e42d90fee4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fEJvdGFzfGVufDB8fDB8fHww"
-                    class="card-img-top img-fluid card-img"
-                    alt="Cuero negro al tobillo"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Cuero negro al tobillo</h5>
-                    <p class="card-text">
-                      Silueta clásica de inspiración militar con funcionalidad moderna.
-                    </p>
-                    <button 
-                    class="btn btn-ampliar ver-producto"
-                    data-nombre="Cuero negro al tobillo"
-                    data-precio="$159.999"
-                    data-descripcion=" Silueta clásica de inspiración militar con funcionalidad moderna."
-                    data-imagen="https://images.unsplash.com/photo-1613673720017-56e42d90fee4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fEJvdGFzfGVufDB8fDB8fHww"
-                    data-bs-toggle="modal"
-                    data-bs-target="#productoModal"
-                    data-stock="En stock"
-                    data-stockclass="success"
-                    data-stars="3.5"                       
-                    data-envio="Envíos sin cargo a todo el país"                    
-                    data-bs-toggle="modal"
-                    data-bs-target="#productoModal"
-                  >
-                    Ampliar
-                  </button>
-                    <p class="card-text">
-                      <small class="text-body-secondary">Editado hace 3 minutos</small>
-                    </p>
-                  </div>
-                </div>
-                </div> 
-              </div>   
-          </div>
-          <div class="tab-pane fade" id="v-pills-Marrón" role="tabpanel" aria-labelledby="v-pills-Marrón-tab">
-            <div class="col mb-4">
-                  <div class="card h-100">
-                    <img
-                      src="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      class="card-img-top img-fluid rounded card-img"
-                      alt="Botas Timberland Earthkeepers para hombre"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Botas Timberland Earthkeepers para hombre</h5>
-                      <p class="card-text">
-                        Un mix entre la durabilidad de Timberland y la conciencia sustentable.
-                      </p>
-                      <button 
-                    class="btn btn-ampliar ver-producto"
-                    data-nombre="Botas Timberland Earthkeepers para hombre"
-                    data-precio="$389.999"
-                    data-descripcion="Un mix entre la durabilidad de Timberland y la conciencia sustentable."
-                    data-imagen="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    data-bs-toggle="modal"
-                    data-bs-target="#productoModal"
-                    data-stock="En stock"
-                    data-stockclass="success"
-                    data-stars="4.5"                        
-                    data-envio="Envíos sin cargo a todo el país"                    
-                    data-bs-toggle="modal"
-                    data-bs-target="#productoModal"
-                  >
-                    Ampliar
-                  </button>
-                      <p class="card-text">
-                        <small class="text-body-secondary">Editado hace 3 minutos</small>
-                      </p>
-                    </div>
-                    
-                  </div>
-                </div>
-                
-                
-                <div class="col mb-4">
-                  <div class="card h-100">
-                    <img
-                      src="https://images.unsplash.com/photo-1638609348722-aa2a3a67db26?q=80&w=1345&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      class="card-img-top img-fluid card-img rounded"
-                      alt="Botas brogue con puntera de Barker Calder."
-                    />
-                  <div class="card-body">
-                    <h5 class="card-title">Botas brogue con puntera de Barker Calder.</h5>
-                    <p class="card-text">Botas elegantes con un extra.</p>
-                    <button 
-                    class="btn btn-ampliar ver-producto"
-                    data-nombre="Botas brogue con puntera de Barker Calder."
-                    data-precio="$159.999"
-                    data-descripcion="Botas elegantes con un extra."
-                    data-imagen="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    data-bs-toggle="modal"
-                    data-bs-target="#productoModal"
-                    data-stock="Sin stock"
-                    data-stockclass="danger"
-                    data-stars="4"                      
-                    data-envio="Envíos sin cargo a todo el país"                    
-                    data-bs-toggle="modal"
-                    data-bs-target="#productoModal"
-                  >
-                    Ampliar
-                  </button>
-                    <p class="card-text">
-                      <small class="text-body-secondary">Editado hace 3 minutos</small>
-                    </p>
-                  </div>
-                </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card h-100">
-                    <img
-                      src="https://images.unsplash.com/photo-1542838776-096d877b5aa2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fEJvdGFzfGVufDB8fDB8fHww"
-                      class="card-img-top img-fluid rounded card-img"
-                      alt="Botas impermeables Timberland Premium"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Botas impermeables Timberland Premium</h5>
-                      <p class="card-text">
-                        Diseñadas hace 40 años se mantienen como un ícono global hoy en día.
-                      </p>
-                      <button 
-                    class="btn btn-ampliar ver-producto"
-                    data-nombre="Botas impermeables Timberland Premium"
-                    data-precio="$320.999"
-                    data-descripcion="Diseñadas hace 40 años se mantienen como un ícono global hoy en día."
-                    data-imagen="https://images.unsplash.com/photo-1542838776-096d877b5aa2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fEJvdGFzfGVufDB8fDB8fHww"
-                    data-bs-toggle="modal"
-                    data-bs-target="#productoModal"
-                    data-stock="En stock"
-                    data-stockclass="success"
-                    data-stars="4.5"                        
-                    data-envio="Envíos sin cargo a todo el país"                    
-                    data-bs-toggle="modal"
-                    data-bs-target="#productoModal"
-                  >
-                    Ampliar
-                  </button>
-                      <p class="card-text">
-                        <small class="text-body-secondary">Editado hace 3 minutos</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-pane fade" id="v-pills-Negro" role="tabpanel" aria-labelledby="v-pills-Negro-tab">
-              <div class="col mb-4">
-                <div class="card h-100">
-                  <img
-                    src="media/bota3.webp"
-                    class="card-img-top img-fluid rounded card-img"
-                    alt="Borcegos estilo militar color negro"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Borcegos estilo militar color negro</h5>
-                    <p class="card-text">
-                      Uniendo resistencia y calidad, con un estilo clasicamente miliar.
-                    </p>
-                    <button 
-                    class="btn btn-ampliar ver-producto"
-                    data-nombre="Borcegos estilo militar color negro"
-                    data-precio="$389.999"
-                    data-descripcion="Uniendo resistencia y calidad, con un estilo clasicamente miliar."
-                    data-imagen="media/bota3.webp"
-                    data-bs-toggle="modal"
-                    data-bs-target="#productoModal"
-                    data-stock="En stock"
-                    data-stockclass="success"
-                    data-stars="4"                      
-                    data-envio="Envíos sin cargo a todo el país"                    
-                    data-bs-toggle="modal"
-                    data-bs-target="#productoModal"
-                  >
-                    Ampliar
-                  </button>
-                    <p class="card-text">
-                      <small class="text-body-secondary">Editado hace 3 minutos</small>
-                    </p>
-                  </div>
-                  
-                </div>
-              </div>
 
                   <div class="col mb-4">
-                <div class="card h-100">
-                  <img
-                    src="https://images.unsplash.com/photo-1613673720017-56e42d90fee4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fEJvdGFzfGVufDB8fDB8fHww"
-                    class="card-img-top img-fluid card-img"
-                    alt="Cuero negro al tobillo"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Cuero negro al tobillo</h5>
-                    <p class="card-text">
-                      Silueta clásica de inspiración militar con funcionalidad moderna.
-                    </p>
-                    <button 
-                    class="btn btn-ampliar ver-producto"
-                    data-nombre="Cuero negro al tobillo"
-                    data-precio="$159.999"
-                    data-descripcion="Silueta clásica de inspiración militar con funcionalidad moderna."
-                    data-imagen="https://images.unsplash.com/photo-1613673720017-56e42d90fee4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fEJvdGFzfGVufDB8fDB8fHww"
-                    data-bs-toggle="modal"
-                    data-bs-target="#productoModal"
-                    data-stock="En stock"
-                    data-stockclass="success"
-                    data-stars="3.5"                        
-                    data-envio="Envíos sin cargo a todo el país"                    
-                    data-bs-toggle="modal"
-                    data-bs-target="#productoModal"
-                  >
-                    Ampliar
-                  </button>
-                    <p class="card-text">
-                      <small class="text-body-secondary">Editado hace 3 minutos</small>
-                    </p>
+                    <div class="card h-100">
+                      <img
+                        src="media/bota3.webp"
+                        class="card-img-top img-fluid rounded card-img"
+                        alt="Borcegos estilo militar color negro"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Borcegos estilo militar color negro</h5>
+                        <p class="card-text">
+                          Uniendo resistencia y calidad, con un estilo clasicamente militar.
+                        </p>
+                        <button 
+                        class="btn btn-ampliar ver-producto"
+                        data-nombre="Borcegos estilo militar color negro"
+                        data-precio="$289.999"
+                        data-descripcion="Uniendo resistencia y calidad, con un estilo clasicamente militar."
+                        data-imagen="media/bota3.webp"
+                        data-bs-toggle="modal"
+                        data-bs-target="#productoModal"
+                        data-stock="En stock"
+                        data-stockclass="success"
+                        data-stars="4"    
+                        data-envio="Envíos sin cargo a todo el país"                    
+                        data-bs-toggle="modal"
+                        data-bs-target="#productoModal"
+                      >
+                        Ampliar
+                      </button>
+                      
+                        <p class="card-text">
+                          <small class="text-body-secondary">Editado hace 3 minutos</small>
+                        </p>
+                        
+                      </div>
+                    
+                    </div>
                   </div>
-                </div>
-                </div>
-                </div>
-              <div class="tab-pane fade" id="v-pills-Bordo" role="tabpanel" aria-labelledby="v-pills-Bordo-tab">
-                <div class="col mb-4">
+                  <div class="col mb-4">
+                    <div class="card h-100">
+                      <img
+                        src="https://images.unsplash.com/photo-1542838776-096d877b5aa2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fEJvdGFzfGVufDB8fDB8fHww"
+                        class="card-img-top img-fluid rounded card-img"
+                        alt="Botas impermeables Timberland Premium"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Botas impermeables Timberland Premium</h5>
+                        <p class="card-text">
+                          Diseñadas hace 40 años se mantienen como un ícono global hoy en día.
+                        </p>
+                        <button 
+                        class="btn btn-ampliar ver-producto"
+                        data-nombre="Botas impermeables Timberland Premium"
+                        data-precio="$320.999"
+                        data-descripcion="Diseñadas hace 40 años se mantienen como un ícono global hoy en día."
+                        data-imagen="https://images.unsplash.com/photo-1542838776-096d877b5aa2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fEJvdGFzfGVufDB8fDB8fHww"
+                        data-bs-toggle="modal"
+                        data-bs-target="#productoModal"
+                        data-stock="En stock"
+                        data-stockclass="success"
+                        data-stars="4.5"                       
+                        data-envio="Envíos sin cargo a todo el país"                    
+                        data-bs-toggle="modal"
+                        data-bs-target="#productoModal"
+                      >
+                        Ampliar
+                      </button>
+                        <p class="card-text">
+                          <small class="text-body-secondary">Editado hace 3 minutos</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card h-100">
+                      <img
+                        src="https://images.unsplash.com/photo-1638609348722-aa2a3a67db26?q=80&w=1345&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top img-fluid card-img rounded"
+                        alt="Botas brogue con puntera de Barker Calder"
+                      />
+                    <div class="card-body">
+                      <h5 class="card-title">Botas brogue con puntera de Barker Calder.</h5>
+                      <p class="card-text">Botas elegantes con un extra.</p>
+                      <button 
+                        class="btn btn-ampliar ver-producto"
+                        data-nombre="Botas brogue con puntera de Barker Calder"
+                        data-precio="$159.999"
+                        data-descripcion="Botas elegantes con un extra."
+                        data-imagen="https://images.unsplash.com/photo-1638609348722-aa2a3a67db26?q=80&w=1345&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        data-bs-toggle="modal"
+                        data-bs-target="#productoModal"
+                        data-stock="Sin stock"
+                        data-stockclass="danger"
+                        data-stars="4"                        
+                        data-envio="Envíos sin cargo a todo el país"                    
+                        data-bs-toggle="modal"
+                        data-bs-target="#productoModal"
+                      >
+                        Ampliar
+                      </button>
+                      <p class="card-text">
+                        <small class="text-body-secondary">Editado hace 3 minutos</small>
+                      </p>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col mb-4">
                   <div class="card h-100">
                     <img
                       src="https://plus.unsplash.com/premium_photo-1728158949987-efc83ed54df4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -503,32 +271,289 @@
                         Entrá en el modo rebelde y expresivo.
                       </p>
                       <button 
-                    class="btn btn-ampliar ver-producto"
-                    data-nombre="Botas Martens Rojo Cereza Liso"
-                    data-precio="$220.999"
-                    data-descripcion="Entrá en el modo rebelde y expresivo."
-                    data-imagen="https://plus.unsplash.com/premium_photo-1728158949987-efc83ed54df4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    data-bs-toggle="modal"
-                    data-bs-target="#productoModal"
-                    data-stock="En stock"
-                    data-stockclass="success"
-                    data-stars="4"                       
-                    data-envio="Envíos sin cargo a todo el país"                    
-                    data-bs-toggle="modal"
-                    data-bs-target="#productoModal"
-                  >
-                    Ampliar
-                  </button>
+                      class="btn btn-ampliar ver-producto"
+                      data-nombre="Botas Martens Rojo Cereza Liso"
+                      data-precio="$220.999"
+                      data-descripcion="Entrá en el modo rebelde y expresivo."
+                      data-imagen="https://plus.unsplash.com/premium_photo-1728158949987-efc83ed54df4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      data-bs-toggle="modal"
+                      data-bs-target="#productoModal"
+                      data-stock="En stock"
+                      data-stockclass="success"
+                      data-stars="4"                        
+                      data-envio="Envíos sin cargo a todo el país"                    
+                      data-bs-toggle="modal"
+                      data-bs-target="#productoModal"
+                    >
+                      Ampliar
+                    </button>
                       <p class="card-text">
                         <small class="text-body-secondary">Editado hace 3 minutos</small>
                       </p>
                     </div>
                   </div>
                   </div>
-              </div>
-              </div>
-          
-      </div>
+                  <div class="col mb-4">
+                  <div class="card h-100">
+                    <img
+                      src="https://images.unsplash.com/photo-1613673720017-56e42d90fee4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fEJvdGFzfGVufDB8fDB8fHww"
+                      class="card-img-top img-fluid card-img"
+                      alt="Cuero negro al tobillo"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Cuero negro al tobillo</h5>
+                      <p class="card-text">
+                        Silueta clásica de inspiración militar con funcionalidad moderna.
+                      </p>
+                      <button 
+                      class="btn btn-ampliar ver-producto"
+                      data-nombre="Cuero negro al tobillo"
+                      data-precio="$159.999"
+                      data-descripcion=" Silueta clásica de inspiración militar con funcionalidad moderna."
+                      data-imagen="https://images.unsplash.com/photo-1613673720017-56e42d90fee4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fEJvdGFzfGVufDB8fDB8fHww"
+                      data-bs-toggle="modal"
+                      data-bs-target="#productoModal"
+                      data-stock="En stock"
+                      data-stockclass="success"
+                      data-stars="3.5"                       
+                      data-envio="Envíos sin cargo a todo el país"                    
+                      data-bs-toggle="modal"
+                      data-bs-target="#productoModal"
+                    >
+                      Ampliar
+                    </button>
+                      <p class="card-text">
+                        <small class="text-body-secondary">Editado hace 3 minutos</small>
+                      </p>
+                    </div>
+                  </div>
+                  </div> 
+                </div>   
+            </div>
+            <div class="tab-pane fade" id="v-pills-Marrón" role="tabpanel" aria-labelledby="v-pills-Marrón-tab">
+              <div class="col mb-4">
+                    <div class="card h-100">
+                      <img
+                        src="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top img-fluid rounded card-img"
+                        alt="Botas Timberland Earthkeepers para hombre"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Botas Timberland Earthkeepers para hombre</h5>
+                        <p class="card-text">
+                          Un mix entre la durabilidad de Timberland y la conciencia sustentable.
+                        </p>
+                        <button 
+                      class="btn btn-ampliar ver-producto"
+                      data-nombre="Botas Timberland Earthkeepers para hombre"
+                      data-precio="$389.999"
+                      data-descripcion="Un mix entre la durabilidad de Timberland y la conciencia sustentable."
+                      data-imagen="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      data-bs-toggle="modal"
+                      data-bs-target="#productoModal"
+                      data-stock="En stock"
+                      data-stockclass="success"
+                      data-stars="4.5"                        
+                      data-envio="Envíos sin cargo a todo el país"                    
+                      data-bs-toggle="modal"
+                      data-bs-target="#productoModal"
+                    >
+                      Ampliar
+                    </button>
+                        <p class="card-text">
+                          <small class="text-body-secondary">Editado hace 3 minutos</small>
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="col mb-4">
+                    <div class="card h-100">
+                      <img
+                        src="https://images.unsplash.com/photo-1638609348722-aa2a3a67db26?q=80&w=1345&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top img-fluid card-img rounded"
+                        alt="Botas brogue con puntera de Barker Calder."
+                      />
+                    <div class="card-body">
+                      <h5 class="card-title">Botas brogue con puntera de Barker Calder.</h5>
+                      <p class="card-text">Botas elegantes con un extra.</p>
+                      <button 
+                      class="btn btn-ampliar ver-producto"
+                      data-nombre="Botas brogue con puntera de Barker Calder."
+                      data-precio="$159.999"
+                      data-descripcion="Botas elegantes con un extra."
+                      data-imagen="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      data-bs-toggle="modal"
+                      data-bs-target="#productoModal"
+                      data-stock="Sin stock"
+                      data-stockclass="danger"
+                      data-stars="4"                      
+                      data-envio="Envíos sin cargo a todo el país"                    
+                      data-bs-toggle="modal"
+                      data-bs-target="#productoModal"
+                    >
+                      Ampliar
+                    </button>
+                      <p class="card-text">
+                        <small class="text-body-secondary">Editado hace 3 minutos</small>
+                      </p>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card h-100">
+                      <img
+                        src="https://images.unsplash.com/photo-1542838776-096d877b5aa2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fEJvdGFzfGVufDB8fDB8fHww"
+                        class="card-img-top img-fluid rounded card-img"
+                        alt="Botas impermeables Timberland Premium"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Botas impermeables Timberland Premium</h5>
+                        <p class="card-text">
+                          Diseñadas hace 40 años se mantienen como un ícono global hoy en día.
+                        </p>
+                        <button 
+                      class="btn btn-ampliar ver-producto"
+                      data-nombre="Botas impermeables Timberland Premium"
+                      data-precio="$320.999"
+                      data-descripcion="Diseñadas hace 40 años se mantienen como un ícono global hoy en día."
+                      data-imagen="https://images.unsplash.com/photo-1542838776-096d877b5aa2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fEJvdGFzfGVufDB8fDB8fHww"
+                      data-bs-toggle="modal"
+                      data-bs-target="#productoModal"
+                      data-stock="En stock"
+                      data-stockclass="success"
+                      data-stars="4.5"                        
+                      data-envio="Envíos sin cargo a todo el país"                    
+                      data-bs-toggle="modal"
+                      data-bs-target="#productoModal"
+                    >
+                      Ampliar
+                    </button>
+                        <p class="card-text">
+                          <small class="text-body-secondary">Editado hace 3 minutos</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-Negro" role="tabpanel" aria-labelledby="v-pills-Negro-tab">
+                <div class="col mb-4">
+                  <div class="card h-100">
+                    <img
+                      src="media/bota3.webp"
+                      class="card-img-top img-fluid rounded card-img"
+                      alt="Borcegos estilo militar color negro"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Borcegos estilo militar color negro</h5>
+                      <p class="card-text">
+                        Uniendo resistencia y calidad, con un estilo clasicamente miliar.
+                      </p>
+                      <button 
+                      class="btn btn-ampliar ver-producto"
+                      data-nombre="Borcegos estilo militar color negro"
+                      data-precio="$389.999"
+                      data-descripcion="Uniendo resistencia y calidad, con un estilo clasicamente miliar."
+                      data-imagen="media/bota3.webp"
+                      data-bs-toggle="modal"
+                      data-bs-target="#productoModal"
+                      data-stock="En stock"
+                      data-stockclass="success"
+                      data-stars="4"                      
+                      data-envio="Envíos sin cargo a todo el país"                    
+                      data-bs-toggle="modal"
+                      data-bs-target="#productoModal"
+                    >
+                      Ampliar
+                    </button>
+                      <p class="card-text">
+                        <small class="text-body-secondary">Editado hace 3 minutos</small>
+                      </p>
+                    </div>
+                    
+                  </div>
+                </div>
+
+                    <div class="col mb-4">
+                  <div class="card h-100">
+                    <img
+                      src="https://images.unsplash.com/photo-1613673720017-56e42d90fee4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fEJvdGFzfGVufDB8fDB8fHww"
+                      class="card-img-top img-fluid card-img"
+                      alt="Cuero negro al tobillo"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Cuero negro al tobillo</h5>
+                      <p class="card-text">
+                        Silueta clásica de inspiración militar con funcionalidad moderna.
+                      </p>
+                      <button 
+                      class="btn btn-ampliar ver-producto"
+                      data-nombre="Cuero negro al tobillo"
+                      data-precio="$159.999"
+                      data-descripcion="Silueta clásica de inspiración militar con funcionalidad moderna."
+                      data-imagen="https://images.unsplash.com/photo-1613673720017-56e42d90fee4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fEJvdGFzfGVufDB8fDB8fHww"
+                      data-bs-toggle="modal"
+                      data-bs-target="#productoModal"
+                      data-stock="En stock"
+                      data-stockclass="success"
+                      data-stars="3.5"                        
+                      data-envio="Envíos sin cargo a todo el país"                    
+                      data-bs-toggle="modal"
+                      data-bs-target="#productoModal"
+                    >
+                      Ampliar
+                    </button>
+                      <p class="card-text">
+                        <small class="text-body-secondary">Editado hace 3 minutos</small>
+                      </p>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+                <div class="tab-pane fade" id="v-pills-Bordo" role="tabpanel" aria-labelledby="v-pills-Bordo-tab">
+                  <div class="col mb-4">
+                    <div class="card h-100">
+                      <img
+                        src="https://plus.unsplash.com/premium_photo-1728158949987-efc83ed54df4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top img-fluid card-img"
+                        alt="Botas Martens Rojo Cereza Liso"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Botas Martens Rojo Cereza Liso</h5>
+                        <p class="card-text">
+                          Entrá en el modo rebelde y expresivo.
+                        </p>
+                        <button 
+                      class="btn btn-ampliar ver-producto"
+                      data-nombre="Botas Martens Rojo Cereza Liso"
+                      data-precio="$220.999"
+                      data-descripcion="Entrá en el modo rebelde y expresivo."
+                      data-imagen="https://plus.unsplash.com/premium_photo-1728158949987-efc83ed54df4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      data-bs-toggle="modal"
+                      data-bs-target="#productoModal"
+                      data-stock="En stock"
+                      data-stockclass="success"
+                      data-stars="4"                       
+                      data-envio="Envíos sin cargo a todo el país"                    
+                      data-bs-toggle="modal"
+                      data-bs-target="#productoModal"
+                    >
+                      Ampliar
+                    </button>
+                        <p class="card-text">
+                          <small class="text-body-secondary">Editado hace 3 minutos</small>
+                        </p>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            
+        </div>
+
       </div>
     </div>
 
