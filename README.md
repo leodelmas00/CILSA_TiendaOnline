@@ -45,3 +45,6 @@ La web fue diseñada con un enfoque responsive, adaptándose correctamente a dis
 
 Gracias a esta adaptación, la interfaz mantiene una correcta visualización, navegación y experiencia de usuario en computadoras, tablets y teléfonos móviles.
 
+## Comentarios
+Gian:
+"Mi tarea se baso en crear products.html, products.css e ir adaptando ambos en base a nuestras necesidades y a los cambios que veiamos correctos, trabajando en conjunto con mis compañeros para un ideal desempeño de nuestra web."
