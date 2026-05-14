@@ -49,3 +49,4 @@ Gracias a esta adaptación, la interfaz mantiene una correcta visualización, na
 Gian:
 "Mi tarea se baso en crear products.html, products.css e ir adaptando ambos en base a nuestras necesidades y a los cambios que veiamos correctos, trabajando en conjunto con mis compañeros para un ideal desempeño de nuestra web."
 LeoDelmas: "Mi trabajo principal fue en las ramas Inicio y Contacto, centrandome en el inicio de la pagina y el formulario"
+Geo: "Me dediqué principalmente a desarrollar el modal y la documentación. Aporté también en cuanto a la redacción de contenidos de la sección productos.
